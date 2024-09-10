@@ -10,10 +10,10 @@ Lembrando que: **Algoritmo** é uma sequência lógica de passos para que um pro
 
 [x]  Comentários
   usa o // para comentar algo que não será visto no programa, apenas por quem vê o código. 
-- Declaração de variáveis (const, let)
-- Operadores (atribuição, concatenação, matemáticos, lógicos)
-- Tipos de dados (strings, number, boolean)
-- Estrutura de dados (functions, object, array)
+[x] Declaração de variáveis (const, let)
+[x] Operadores (atribuição, concatenação, matemáticos, lógicos)
+[x] Tipos de dados (strings, number, boolean)
+[x] Estrutura de dados (functions, object, array)
 - Controle de fluxo ( if/else)
 - Estrutura de repetição (for, while)
 
@@ -43,9 +43,29 @@ Lembrando que: **Algoritmo** é uma sequência lógica de passos para que um pro
    Não faz muito sentido, mas são variáveis que não mudam sua designação.  
 
 ## Tipos de dados 
- String = texto --> "  ''  ``
- Number = números 
- Functions 
+ [x] String = texto --> "  ''  ``
+ [x] Number = números 
+ [x] Functions 
 
 ## Operadores: 
- Atribuem um valor 
+ [x] Atribuem um valor : = 
+ [x] Atribuem valor de concatenação (para strings): + 
+
+## Estrutura de dados: 
+
+### Arrays 
+ [x] É basicamente uma lista de componetes que você pode colocar em uma variável usando [] 
+
+### Objetos: 
+ [x] Atributos e métodos
+   Atr 
+ [x] Criação e manipulação de objetos 
+ [x] Acesso a propriedade de objetos. 
+   > para acessar um valor que está dentro de um objeto, é só chegar com o pontinho ( . ) 
+
+### FUNCTIONS 
+
+  [x] criar, passar argumento
+  [x] executar 
+  [x] arrow function / name function 
+
