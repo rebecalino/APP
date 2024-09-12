@@ -69,3 +69,7 @@ Lembrando que: **Algoritmo** é uma sequência lógica de passos para que um pro
   [x] executar 
   [x] arrow function / name function 
 
+### ESTRUTURA DE REPETIÇÃO: 
+- [x] while -> literalmente repete constantemente a informação. Só para com o return (Caso haja uma repetição infinita, ctrl + c para as respostas)
+
+### CONDICIONAIS 
