@@ -73,3 +73,11 @@ Lembrando que: **Algoritmo** é uma sequência lógica de passos para que um pro
 - [x] while -> literalmente repete constantemente a informação. Só para com o return (Caso haja uma repetição infinita, ctrl + c para as respostas)
 
 ### CONDICIONAIS 
+[x] switch
+
+### MÓDULOS EM NODE.JS : 
+[x] Importação de módulos (requirer, CommonJS)
+[x] Biblioteca inquirer para criar prompts interativos
+
+## PROGRAMAÇÃO ASSÍNCRONAS 
+[x] Uso de funções assíncronas (async e await, dando a oportunidade de escolha do usuário) e promessas
