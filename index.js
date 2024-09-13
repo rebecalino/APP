@@ -1,8 +1,8 @@
 const{select, input, checkbox}= require('@inquirer/prompts')
 
 let meta = {
-    value: 'Tomar 3L de água por dia', 
-    checked: false, 
+    value: "Tomar 3L de água por dia",
+    checked: false
 }
 let metas = [meta]
 
@@ -32,14 +32,23 @@ const listarMetas = async() => {
     return
   }
   
+  metas.forEach((m) => {
+    m.checked = false
+  })
 
   respostas.forEach((resposta) => {
     const meta = metas.find((m) => {
-        return m.value
+        return m.value == resposta
     })
+    
   meta.checked = true
  })
+
+ console.log("Meta(s) marcadas como concluída(s)!")
+
 }
+
+
 const start = async () => {
    
     while(true){
