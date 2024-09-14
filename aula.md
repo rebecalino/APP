@@ -80,6 +80,13 @@ Lembrando que: **Algoritmo** é uma sequência lógica de passos para que um pro
 ### MÓDULOS EM NODE.JS : 
 [x] Importação de módulos (requirer, CommonJS)
 [x] Biblioteca inquirer para criar prompts interativos
+[x] FS (file system)
+
+## JSON: 
+
+[x]Javascript Object Notation 
+[x]JSON.parse() => Json para JS
+[x]JSON.stringify() => JS para Json
 
 ## PROGRAMAÇÃO ASSÍNCRONAS 
 [x] Uso de funções assíncronas (async e await, dando a oportunidade de escolha do usuário) e promessas
