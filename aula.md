@@ -57,7 +57,7 @@ Lembrando que: **Algoritmo** é uma sequência lógica de passos para que um pro
 
 ### Arrays 
  [x] É basicamente uma lista de componetes que você pode colocar em uma variável usando [] 
- [x] Métodos de array: push, [find, forEach, filter]: HOF: Higher Order Functions. 
+ [x] Métodos de array: push, [find, forEach, filter, map]: HOF: Higher Order Functions. 
 
 ### Objetos: 
  [x] Atributos e métodos

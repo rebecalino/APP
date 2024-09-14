@@ -1,5 +1,7 @@
 const{select, input, checkbox}= require('@inquirer/prompts')
 
+let mensagem = "Bem-vindo ao App de Metas!";
+
 let meta = {
     value: "Tomar 3L de água por dia",
     checked: false
@@ -18,8 +20,9 @@ const cadastrarMeta = async () => {
         metas.push({
             value: meta,
             checked: false, 
-        })
+        })  
 
+ mensagem = "Meta cadastrada com sucesso!"
 }
 
 const listarMetas = async() => { 
@@ -34,7 +37,7 @@ const listarMetas = async() => {
       })
 
   if(respostas.length == 0 ) {
-    console.log("Nenhuma meta selecionada")
+    mensagem = "Nenhuma meta selecionada"
     return
   }
 
@@ -46,7 +49,7 @@ const listarMetas = async() => {
   meta.checked = true
  })
 
- console.log("Meta(s) marcadas como concluída(s)!")
+ mensagem = "Meta(s) marcadas como concluída(s)!"
 
 }
 
@@ -56,7 +59,7 @@ const metasRealizadas = async () => {
     })
 
     if (realizadas.length == 0) {
-        console.log('Não existe(m) meta(s) realizada(s) :(')
+        mensagem = 'Não existe(m) meta(s) realizada(s) :('
         return
     }
 
@@ -73,7 +76,7 @@ const metasAbertas = async () => {
     })
 
     if(abertas.length == 0){
-        console.log('Parabéns! Você concluiu todas as metas!! :)')
+        mensagem = 'Parabéns! Você concluiu todas as metas!! :)'
     }
 
     await select ({
@@ -93,7 +96,7 @@ const deletarMetas = async () => {
     })
 
     if(itemsADeletar.length==0){
-        console.log("Nenhuma meta selecionada")
+        mensagem = "Nenhuma meta selecionada"
         return
     }
 
@@ -103,14 +106,23 @@ const deletarMetas = async () => {
         })
     })
 
-    console.log('Meta(s) deletada(s) com sucesso!')
+    mensagem ='Meta(s) deletada(s) com sucesso!'
 }
 
+const mostrarMensagem = () => { 
+    console.clear();
 
+    if(mensagem != 0) { 
+        console.log(mensagem); 
+        console.log("");
+        mensagem = ""
+    }
+}
 const start = async () => {
    
     while(true){
-     
+        mostrarMensagem()
+
         const opcao = await select({
             message : "Menu >",
             choices: [
@@ -147,7 +159,6 @@ const start = async () => {
 
         case "cadastrar":
            await  cadastrarMeta ()
-           console.log(metas)
             break
 
         case "listar":
