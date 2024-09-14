@@ -26,7 +26,8 @@ const listarMetas = async() => {
     const respostas = await checkbox ({
         message: "Use as setas para mudar de meta, o espaço para marcar e desmarcar e o ENTER para finalizar essa etapa",
         choices: [...metas]
-})
+    })
+
   if(respostas.length == 0 ) {
     console.log("Nenhuma meta selecionada")
     return
@@ -48,13 +49,29 @@ const listarMetas = async() => {
 
 }
 
+const MetasRealizadas = async () => {
+    const realizadas = metas.filter((meta) => {
+        return meta.checked
+    })
+
+    if (realizadas.length == 0) {
+        console.log('Não existe(m) meta(s) realizada(s) :(')
+        return
+    }
+
+    await select({
+        message: "Metas Realizadas abaixo:",
+        choices:[...realizadas]
+    })
+}
+
 
 const start = async () => {
    
     while(true){
      
         const opcao = await select({
-            message: "Menu >",
+            message : "Menu >",
             choices: [
                 {
                     name: "CADASTRAR METAS", 
@@ -65,21 +82,41 @@ const start = async () => {
                     value: "listar"
                 },
                 {
+                    name: "METAS REALIZADAS",
+                    value: "realizadas"
+                },
+                {
+                    name: "METAS ABERTAS",
+                    value: "abertas"
+                },
+                {
                     name: "SAIR", 
                     value: "sair"
                 },
+             
             ]
         })
 
 
       switch(opcao){
+
         case "cadastrar":
            await  cadastrarMeta ()
            console.log(metas)
             break
+
         case "listar":
             await listarMetas()
             break
+
+        case "realizadas":
+            await MetasRealizadas()
+            break
+
+        case "abertas":
+            await MetasAbertas()
+            break
+
         case "sair":
             console.log("Até a próxima! Tchaau!")
             return

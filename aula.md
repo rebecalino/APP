@@ -50,15 +50,17 @@ Lembrando que: **Algoritmo** é uma sequência lógica de passos para que um pro
 ## Operadores: 
  [x] Atribuem um valor : = 
  [x] Atribuem valor de concatenação (para strings): + 
+ [x] Operadores de comparação: ==, !=, <=, >=, <,>
+ [x] Operador spread operator ...   : Dentro de um array, ele retira a informação para fazer um novo à base do antigo 
 
 ## Estrutura de dados: 
 
 ### Arrays 
  [x] É basicamente uma lista de componetes que você pode colocar em uma variável usando [] 
+ [x] Métodos de array: push, [find, forEach, filter]: HOF: Higher Order Functions. 
 
 ### Objetos: 
  [x] Atributos e métodos
-   Atr 
  [x] Criação e manipulação de objetos 
  [x] Acesso a propriedade de objetos. 
    > para acessar um valor que está dentro de um objeto, é só chegar com o pontinho ( . ) 
